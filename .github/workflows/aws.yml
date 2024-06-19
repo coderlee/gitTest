@@ -15,7 +15,7 @@ jobs:
 
       - name: npm Install in ApiGateway
         run: |
-          cd ..
+          cd gitTest/.github
           npm install
 
       - name: Determine deployment stage
