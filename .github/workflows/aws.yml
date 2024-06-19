@@ -14,8 +14,8 @@ jobs:
             node-version: '18'
 
       - name: npm Install in ApiGateway
-        run:   
-          cd ./workflows
+        run: |
+          cd ../workflows
           npm install
 
       - name: Determine deployment stage
