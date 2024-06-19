@@ -15,7 +15,6 @@ jobs:
 
       - name: npm Install in ApiGateway
         run: |
-          cd ../workflows
           npm install
 
       - name: Determine deployment stage
