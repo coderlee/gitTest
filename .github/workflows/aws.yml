@@ -16,6 +16,8 @@ jobs:
       - name: npm Install in ApiGateway
         run: |
           cd .github
+          current_branch=$(basename "${{ github.ref }}")
+          echo "current branch: $current_branch"
           npm install
 
       - name: Determine deployment stage
